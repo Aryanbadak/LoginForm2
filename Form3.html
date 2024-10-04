@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            margin: auto;
+            width: 300px;
+            height: 100px;
+            background-color: #FFE9D0;
+            padding: 40px;
+            border-radius: 5px;
+            box-shadow: 5px 3px 5px black;
+        }
+
+        input {
+            border: none;
+            margin: 10px;
+            padding: 5px;
+            background-color: white;
+            border-radius: 7px;
+            box-shadow: 2px 2px 5px black;
+        }
+
+        input:focus {
+            outline: none;
+            color: black;
+            box-shadow: 5px 8px 6px black;
+        }
+
+        label {
+            font-size: 18px;
+            font-weight: 600;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 0;
+            margin-bottom: 20px;
+            text-decoration: underline;
+            color: black;
+            letter-spacing: 2px;
+            text-shadow: 5px 5px 5px rgb(238, 148, 83);
+        }
+
+        [type="submit"] {
+            font-size: 18px;
+            font-weight: 600;
+            padding: 7px 15px 7px 15px;
+            border-radius: 9px;
+            /* border: 1px solid black; */
+            border: none;
+            margin: 30px 10px 0 0;
+            float: right;
+            background-color: #FFFED3;
+            color: black;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        button:focus {
+            outline: none;
+        }
+
+        [type="submit"]:hover {
+            background-color: #BBE9FF;
+            color: black;
+            box-shadow: 5px 8px 6px black;
+        }
+
+        /* table,tr,td{
+            border: 2px solid black;
+        } */
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td colspan="2">
+                <h1>Login</h1>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="">
+                    Username
+                </label>
+            <td>
+                <input type="text" name="user">
+            </td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="">Email</label>
+            </td>
+            <td>
+                <input type="email" name="email">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="">password</label>
+            </td>
+            <td>
+                <input type="password" name="pass">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button type="submit">Login</button>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
